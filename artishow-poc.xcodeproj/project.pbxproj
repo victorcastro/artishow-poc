@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E8474D6329F0D08000E2E0B1 /* artishow_pocApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8474D6229F0D08000E2E0B1 /* artishow_pocApp.swift */; };
-		E8474D6529F0D08000E2E0B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8474D6429F0D08000E2E0B1 /* ContentView.swift */; };
+		E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */; };
+		E8474D6529F0D08000E2E0B1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8474D6429F0D08000E2E0B1 /* LoginView.swift */; };
 		E8474D6729F0D08200E2E0B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8474D6629F0D08200E2E0B1 /* Assets.xcassets */; };
-		E8474D6A29F0D08200E2E0B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8474D6929F0D08200E2E0B1 /* Preview Assets.xcassets */; };
+		E8474D7129F0D11200E2E0B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8474D7029F0D11200E2E0B1 /* GoogleService-Info.plist */; };
+		E847D42529F0D3650026EEAE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42429F0D3650026EEAE /* FirebaseAnalytics */; };
+		E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42629F0D3650026EEAE /* FirebaseAuth */; };
+		E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42829F0D3650026EEAE /* FirebaseCrashlytics */; };
+		E847D42B29F0D3650026EEAE /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42A29F0D3650026EEAE /* FirebaseMessaging */; };
+		E8BCB02029F0D7370086A8A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BCB01F29F0D7370086A8A0 /* Preview Assets.xcassets */; };
+		E8BCB02929F0DD050086A8A0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E8BCB02829F0DD050086A8A0 /* GoogleSignIn */; };
+		E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */; };
+		E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E8474D5F29F0D08000E2E0B1 /* artishow-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "artishow-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8474D6229F0D08000E2E0B1 /* artishow_pocApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = artishow_pocApp.swift; sourceTree = "<group>"; };
-		E8474D6429F0D08000E2E0B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8474D6429F0D08000E2E0B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E8474D6629F0D08200E2E0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8474D6929F0D08200E2E0B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8474D7029F0D11200E2E0B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8BCB01F29F0D7370086A8A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8BCB02629F0DB540086A8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +38,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8BCB02929F0DD050086A8A0 /* GoogleSignIn in Frameworks */,
+				E847D42B29F0D3650026EEAE /* FirebaseMessaging in Frameworks */,
+				E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */,
+				E847D42529F0D3650026EEAE /* FirebaseAnalytics in Frameworks */,
+				E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,20 +68,80 @@
 		E8474D6129F0D08000E2E0B1 /* artishow-poc */ = {
 			isa = PBXGroup;
 			children = (
-				E8474D6229F0D08000E2E0B1 /* artishow_pocApp.swift */,
-				E8474D6429F0D08000E2E0B1 /* ContentView.swift */,
-				E8474D6629F0D08200E2E0B1 /* Assets.xcassets */,
-				E8474D6829F0D08200E2E0B1 /* Preview Content */,
+				E8BCB02629F0DB540086A8A0 /* Info.plist */,
+				E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */,
+				E8BCB02129F0D7470086A8A0 /* Frameworks */,
+				E847D42D29F0D6ED0026EEAE /* Resources */,
+				E847D42C29F0D64A0026EEAE /* Source */,
 			);
 			path = "artishow-poc";
 			sourceTree = "<group>";
 		};
-		E8474D6829F0D08200E2E0B1 /* Preview Content */ = {
+		E847D42C29F0D64A0026EEAE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E8474D6929F0D08200E2E0B1 /* Preview Assets.xcassets */,
+				E8BCB02429F0D7CD0086A8A0 /* Workflows */,
+				E8BCB02329F0D7C30086A8A0 /* Componets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E847D42D29F0D6ED0026EEAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8474D6629F0D08200E2E0B1 /* Assets.xcassets */,
+				E8BCB01E29F0D7370086A8A0 /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8BCB01E29F0D7370086A8A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8BCB01F29F0D7370086A8A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E8BCB02129F0D7470086A8A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8BCB02229F0D7540086A8A0 /* Firebase */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8BCB02229F0D7540086A8A0 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E8474D7029F0D11200E2E0B1 /* GoogleService-Info.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E8BCB02329F0D7C30086A8A0 /* Componets */ = {
+			isa = PBXGroup;
+			children = (
+				E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */,
+			);
+			path = Componets;
+			sourceTree = "<group>";
+		};
+		E8BCB02429F0D7CD0086A8A0 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				E8BCB02529F0D7F80086A8A0 /* Login */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		E8BCB02529F0D7F80086A8A0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E8474D6429F0D08000E2E0B1 /* LoginView.swift */,
+				E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +160,13 @@
 			dependencies = (
 			);
 			name = "artishow-poc";
+			packageProductDependencies = (
+				E847D42429F0D3650026EEAE /* FirebaseAnalytics */,
+				E847D42629F0D3650026EEAE /* FirebaseAuth */,
+				E847D42829F0D3650026EEAE /* FirebaseCrashlytics */,
+				E847D42A29F0D3650026EEAE /* FirebaseMessaging */,
+				E8BCB02829F0DD050086A8A0 /* GoogleSignIn */,
+			);
 			productName = "artishow-poc";
 			productReference = E8474D5F29F0D08000E2E0B1 /* artishow-poc.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +195,10 @@
 				Base,
 			);
 			mainGroup = E8474D5629F0D08000E2E0B1;
+			packageReferences = (
+				E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E8BCB02729F0DD050086A8A0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = E8474D6029F0D08000E2E0B1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +213,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8474D6A29F0D08200E2E0B1 /* Preview Assets.xcassets in Resources */,
+				E8474D7129F0D11200E2E0B1 /* GoogleService-Info.plist in Resources */,
+				E8BCB02029F0D7370086A8A0 /* Preview Assets.xcassets in Resources */,
 				E8474D6729F0D08200E2E0B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +226,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8474D6529F0D08000E2E0B1 /* ContentView.swift in Sources */,
-				E8474D6329F0D08000E2E0B1 /* artishow_pocApp.swift in Sources */,
+				E8474D6529F0D08000E2E0B1 /* LoginView.swift in Sources */,
+				E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */,
+				E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */,
+				E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,15 +357,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "artishow-poc/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Artishow POC";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,9 +375,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.victorcastro.artishow-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -295,15 +391,17 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "artishow-poc/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Artishow POC";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +409,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.victorcastro.artishow-poc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +440,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		E8BCB02729F0DD050086A8A0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E847D42429F0D3650026EEAE /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		E847D42629F0D3650026EEAE /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E847D42829F0D3650026EEAE /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		E847D42A29F0D3650026EEAE /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		E8BCB02829F0DD050086A8A0 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8BCB02729F0DD050086A8A0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E8474D5729F0D08000E2E0B1 /* Project object */;
 }
