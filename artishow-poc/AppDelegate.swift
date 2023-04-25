@@ -30,7 +30,8 @@ struct artishow_pocApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            HomeView()
+            // LoginView()
         }
     }
 }

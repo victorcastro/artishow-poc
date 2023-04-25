@@ -15,6 +15,8 @@
 		E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42629F0D3650026EEAE /* FirebaseAuth */; };
 		E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42829F0D3650026EEAE /* FirebaseCrashlytics */; };
 		E847D42B29F0D3650026EEAE /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42A29F0D3650026EEAE /* FirebaseMessaging */; };
+		E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACB33829F77F19000D11A4 /* HomeView.swift */; };
+		E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACB33B29F78653000D11A4 /* MenuView.swift */; };
 		E8BCB02029F0D7370086A8A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BCB01F29F0D7370086A8A0 /* Preview Assets.xcassets */; };
 		E8BCB02929F0DD050086A8A0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E8BCB02829F0DD050086A8A0 /* GoogleSignIn */; };
 		E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */; };
@@ -27,6 +29,8 @@
 		E8474D6429F0D08000E2E0B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E8474D6629F0D08200E2E0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8474D7029F0D11200E2E0B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8ACB33829F77F19000D11A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E8ACB33B29F78653000D11A4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		E8BCB01F29F0D7370086A8A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E8BCB02629F0DB540086A8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +99,22 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		E8ACB33729F77F0B000D11A4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E8ACB33829F77F19000D11A4 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8ACB33A29F78647000D11A4 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E8ACB33B29F78653000D11A4 /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		E8BCB01E29F0D7370086A8A0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +150,8 @@
 		E8BCB02429F0D7CD0086A8A0 /* Workflows */ = {
 			isa = PBXGroup;
 			children = (
+				E8ACB33A29F78647000D11A4 /* Menu */,
+				E8ACB33729F77F0B000D11A4 /* Home */,
 				E8BCB02529F0D7F80086A8A0 /* Login */,
 			);
 			path = Workflows;
@@ -227,8 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8474D6529F0D08000E2E0B1 /* LoginView.swift in Sources */,
+				E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */,
 				E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */,
 				E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */,
+				E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */,
 				E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
