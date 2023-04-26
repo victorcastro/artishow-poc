@@ -13,7 +13,7 @@ struct CoordinatorView: View {
     
     var body: some View {
         NavigationStack(path: $coordinator.path) {
-            coordinator.build(page: .login)
+            coordinator.build(page: coordinator.isLoggedIn ? .privateZone : .login)
                 .navigationDestination(for: Page.self) { page in
                     coordinator.build(page: page)
                 }
@@ -25,11 +25,5 @@ struct CoordinatorView: View {
                 }
         }
         .environmentObject(coordinator)
-    }
-}
-
-struct CoordinatorView_Previews: PreviewProvider {
-    static var previews: some View {
-        CoordinatorView()
     }
 }

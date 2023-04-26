@@ -29,6 +29,10 @@
 		E8E0879929F8D015008428E7 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0879829F8D015008428E7 /* FavoritesView.swift */; };
 		E8E0879C29F8D075008428E7 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0879B29F8D075008428E7 /* PasswordView.swift */; };
 		E8E087A129F8D1F5008428E7 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087A029F8D1F5008428E7 /* CoordinatorView.swift */; };
+		E8E087A629F8D6C0008428E7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087A529F8D6C0008428E7 /* Utils.swift */; };
+		E8E087A829F8D6D0008428E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087A729F8D6D0008428E7 /* Constants.swift */; };
+		E8E087AA29F8D7AD008428E7 /* CoordinatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087A929F8D7AD008428E7 /* CoordinatorContent.swift */; };
+		E8E087AF29F8DC1A008428E7 /* PrivateZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087AE29F8DC1A008428E7 /* PrivateZoneView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,10 @@
 		E8E0879829F8D015008428E7 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		E8E0879B29F8D075008428E7 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		E8E087A029F8D1F5008428E7 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		E8E087A529F8D6C0008428E7 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E8E087A729F8D6D0008428E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8E087A929F8D7AD008428E7 /* CoordinatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorContent.swift; sourceTree = "<group>"; };
+		E8E087AE29F8DC1A008428E7 /* PrivateZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateZoneView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,12 +96,10 @@
 		E8474D6129F0D08000E2E0B1 /* artishow-poc */ = {
 			isa = PBXGroup;
 			children = (
-				E8BCB02629F0DB540086A8A0 /* Info.plist */,
 				E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */,
-				E8E0877D29F8CB0F008428E7 /* Coordinator.swift */,
-				E8E087A029F8D1F5008428E7 /* CoordinatorView.swift */,
-				E8BCB02129F0D7470086A8A0 /* Frameworks */,
-				E847D42D29F0D6ED0026EEAE /* Resources */,
+				E8BCB02629F0DB540086A8A0 /* Info.plist */,
+				E8E087A229F8D629008428E7 /* Resources */,
+				E847D42D29F0D6ED0026EEAE /* Assets */,
 				E847D42C29F0D64A0026EEAE /* Source */,
 			);
 			path = "artishow-poc";
@@ -102,19 +108,20 @@
 		E847D42C29F0D64A0026EEAE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E8BCB02429F0D7CD0086A8A0 /* Workflows */,
+				E8E087A429F8D6AF008428E7 /* Helpers */,
 				E8BCB02329F0D7C30086A8A0 /* Componets */,
+				E8BCB02429F0D7CD0086A8A0 /* Workflows */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		E847D42D29F0D6ED0026EEAE /* Resources */ = {
+		E847D42D29F0D6ED0026EEAE /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				E8474D6629F0D08200E2E0B1 /* Assets.xcassets */,
 				E8BCB01E29F0D7370086A8A0 /* Preview Content */,
 			);
-			path = Resources;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		E8ACB33729F77F0B000D11A4 /* Home */ = {
@@ -212,6 +219,7 @@
 		E8E0878B29F8CE9E008428E7 /* PrivateZone */ = {
 			isa = PBXGroup;
 			children = (
+				E8E087AE29F8DC1A008428E7 /* PrivateZoneView.swift */,
 				E8ACB33729F77F0B000D11A4 /* Home */,
 				E8E0879029F8CF7D008428E7 /* Favorites */,
 				E8E0879129F8CF96008428E7 /* Artishow */,
@@ -268,6 +276,34 @@
 				E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */,
 			);
 			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		E8E087A229F8D629008428E7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E8E087A329F8D662008428E7 /* Coordinator */,
+				E8BCB02129F0D7470086A8A0 /* Frameworks */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E8E087A329F8D662008428E7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0877D29F8CB0F008428E7 /* Coordinator.swift */,
+				E8E087A029F8D1F5008428E7 /* CoordinatorView.swift */,
+				E8E087A929F8D7AD008428E7 /* CoordinatorContent.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		E8E087A429F8D6AF008428E7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E8E087A729F8D6D0008428E7 /* Constants.swift */,
+				E8E087A529F8D6C0008428E7 /* Utils.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,13 +393,17 @@
 				E8E0878E29F8CF33008428E7 /* RegisterView.swift in Sources */,
 				E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */,
 				E8E0879729F8D005008428E7 /* ArtishowView.swift in Sources */,
+				E8E087A629F8D6C0008428E7 /* Utils.swift in Sources */,
 				E8E0879C29F8D075008428E7 /* PasswordView.swift in Sources */,
+				E8E087A829F8D6D0008428E7 /* Constants.swift in Sources */,
 				E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */,
 				E8E0878329F8CD44008428E7 /* PhotosView.swift in Sources */,
 				E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */,
 				E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */,
+				E8E087AF29F8DC1A008428E7 /* PrivateZoneView.swift in Sources */,
 				E8E0879929F8D015008428E7 /* FavoritesView.swift in Sources */,
 				E8E0878829F8CD8B008428E7 /* PhotoScreenView.swift in Sources */,
+				E8E087AA29F8D7AD008428E7 /* CoordinatorContent.swift in Sources */,
 				E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */,
 				E8E0877E29F8CB0F008428E7 /* Coordinator.swift in Sources */,
 			);
@@ -493,7 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -527,7 +567,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Resources/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

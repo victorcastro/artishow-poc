@@ -12,6 +12,7 @@ class Coordinator: ObservableObject {
     @Published var path = NavigationPath()
     @Published var sheet: Sheet?
     @Published var fullScreenCover: FullScreenCover?
+    @Published var isLoggedIn = false
     
     func push(_ page: Page) {
         path.append(page)
@@ -47,8 +48,8 @@ extension Coordinator {
     @ViewBuilder
     func build(page: Page) -> some View {
         switch page {
-        case .home:
-            HomeView()
+        case .privateZone:
+            PrivateZoneView()
             
         case .login:
             LoginView()
@@ -75,29 +76,5 @@ extension Coordinator {
         case .photoScreen:
             PhotoScreenView()
         }
-    }
-}
-
-enum Page: String, Identifiable {
-    case login, register, home
-    
-    var id: String {
-        self.rawValue
-    }
-}
-
-enum Sheet: String, Identifiable {
-    case photos, password
-    
-    var id: String {
-        self.rawValue
-    }
-}
-
-enum FullScreenCover: String, Identifiable {
-    case photoScreen
-    
-    var id: String {
-        self.rawValue
     }
 }

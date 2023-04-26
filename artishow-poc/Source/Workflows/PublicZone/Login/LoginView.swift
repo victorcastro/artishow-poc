@@ -36,6 +36,9 @@ struct LoginView: View {
                 HStack {
                     Button {
                         vm.signInWithEmail(email: username, paswd: password)
+                        
+                        // TODO: Change method in ViewModel
+                        coordinator.isLoggedIn = true
                     } label: {
                         Text("Login").padding(12)
                             .background(Color.accentColor)
