@@ -21,6 +21,14 @@
 		E8BCB02929F0DD050086A8A0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E8BCB02829F0DD050086A8A0 /* GoogleSignIn */; };
 		E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */; };
 		E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */; };
+		E8E0877E29F8CB0F008428E7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0877D29F8CB0F008428E7 /* Coordinator.swift */; };
+		E8E0878329F8CD44008428E7 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0878229F8CD44008428E7 /* PhotosView.swift */; };
+		E8E0878829F8CD8B008428E7 /* PhotoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0878729F8CD8B008428E7 /* PhotoScreenView.swift */; };
+		E8E0878E29F8CF33008428E7 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0878D29F8CF33008428E7 /* RegisterView.swift */; };
+		E8E0879729F8D005008428E7 /* ArtishowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0879629F8D005008428E7 /* ArtishowView.swift */; };
+		E8E0879929F8D015008428E7 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0879829F8D015008428E7 /* FavoritesView.swift */; };
+		E8E0879C29F8D075008428E7 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E0879B29F8D075008428E7 /* PasswordView.swift */; };
+		E8E087A129F8D1F5008428E7 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087A029F8D1F5008428E7 /* CoordinatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +43,14 @@
 		E8BCB02629F0DB540086A8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E8E0877D29F8CB0F008428E7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E8E0878229F8CD44008428E7 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		E8E0878729F8CD8B008428E7 /* PhotoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScreenView.swift; sourceTree = "<group>"; };
+		E8E0878D29F8CF33008428E7 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		E8E0879629F8D005008428E7 /* ArtishowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtishowView.swift; sourceTree = "<group>"; };
+		E8E0879829F8D015008428E7 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		E8E0879B29F8D075008428E7 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
+		E8E087A029F8D1F5008428E7 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,8 @@
 			children = (
 				E8BCB02629F0DB540086A8A0 /* Info.plist */,
 				E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */,
+				E8E0877D29F8CB0F008428E7 /* Coordinator.swift */,
+				E8E087A029F8D1F5008428E7 /* CoordinatorView.swift */,
 				E8BCB02129F0D7470086A8A0 /* Frameworks */,
 				E847D42D29F0D6ED0026EEAE /* Resources */,
 				E847D42C29F0D64A0026EEAE /* Source */,
@@ -142,7 +160,7 @@
 		E8BCB02329F0D7C30086A8A0 /* Componets */ = {
 			isa = PBXGroup;
 			children = (
-				E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */,
+				E8E0879D29F8D09D008428E7 /* RootViewController */,
 			);
 			path = Componets;
 			sourceTree = "<group>";
@@ -150,9 +168,8 @@
 		E8BCB02429F0D7CD0086A8A0 /* Workflows */ = {
 			isa = PBXGroup;
 			children = (
-				E8ACB33A29F78647000D11A4 /* Menu */,
-				E8ACB33729F77F0B000D11A4 /* Home */,
-				E8BCB02529F0D7F80086A8A0 /* Login */,
+				E8E0878B29F8CE9E008428E7 /* PrivateZone */,
+				E8E0878929F8CDE3008428E7 /* PublicZone */,
 			);
 			path = Workflows;
 			sourceTree = "<group>";
@@ -164,6 +181,93 @@
 				E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		E8E0877F29F8CD28008428E7 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0878229F8CD44008428E7 /* PhotosView.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		E8E0878429F8CD6D008428E7 /* PhotoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0878729F8CD8B008428E7 /* PhotoScreenView.swift */,
+			);
+			path = PhotoScreen;
+			sourceTree = "<group>";
+		};
+		E8E0878929F8CDE3008428E7 /* PublicZone */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0879A29F8D06D008428E7 /* Password */,
+				E8E0878C29F8CF0C008428E7 /* Register */,
+				E8BCB02529F0D7F80086A8A0 /* Login */,
+			);
+			path = PublicZone;
+			sourceTree = "<group>";
+		};
+		E8E0878B29F8CE9E008428E7 /* PrivateZone */ = {
+			isa = PBXGroup;
+			children = (
+				E8ACB33729F77F0B000D11A4 /* Home */,
+				E8E0879029F8CF7D008428E7 /* Favorites */,
+				E8E0879129F8CF96008428E7 /* Artishow */,
+				E8ACB33A29F78647000D11A4 /* Menu */,
+			);
+			path = PrivateZone;
+			sourceTree = "<group>";
+		};
+		E8E0878C29F8CF0C008428E7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0878D29F8CF33008428E7 /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E8E0879029F8CF7D008428E7 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0879829F8D015008428E7 /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		E8E0879129F8CF96008428E7 /* Artishow */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0879429F8CFEB008428E7 /* Sections */,
+				E8E0879629F8D005008428E7 /* ArtishowView.swift */,
+			);
+			path = Artishow;
+			sourceTree = "<group>";
+		};
+		E8E0879429F8CFEB008428E7 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0878429F8CD6D008428E7 /* PhotoScreen */,
+				E8E0877F29F8CD28008428E7 /* Photos */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		E8E0879A29F8D06D008428E7 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0879B29F8D075008428E7 /* PasswordView.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		E8E0879D29F8D09D008428E7 /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E8BCB02C29F0E0560086A8A0 /* RootViewController.swift */,
+			);
+			path = RootViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,11 +353,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8474D6529F0D08000E2E0B1 /* LoginView.swift in Sources */,
+				E8E087A129F8D1F5008428E7 /* CoordinatorView.swift in Sources */,
+				E8E0878E29F8CF33008428E7 /* RegisterView.swift in Sources */,
 				E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */,
+				E8E0879729F8D005008428E7 /* ArtishowView.swift in Sources */,
+				E8E0879C29F8D075008428E7 /* PasswordView.swift in Sources */,
 				E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */,
+				E8E0878329F8CD44008428E7 /* PhotosView.swift in Sources */,
 				E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */,
 				E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */,
+				E8E0879929F8D015008428E7 /* FavoritesView.swift in Sources */,
+				E8E0878829F8CD8B008428E7 /* PhotoScreenView.swift in Sources */,
 				E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */,
+				E8E0877E29F8CB0F008428E7 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

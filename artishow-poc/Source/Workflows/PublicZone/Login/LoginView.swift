@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @EnvironmentObject private var coordinator: Coordinator
+    
     @State private var username: String = ""
     @State private var password: String = ""
     
@@ -21,7 +23,8 @@ struct LoginView: View {
             HStack {
                 Spacer()
                 Button {
-                    vm.signUpWithEmail(email: username, paswd: password)
+                    coordinator.push(.register)
+                    // vm.signUpWithEmail(email: username, paswd: password)
                 } label: {
                     Text("Registrarme")
                 }
@@ -37,6 +40,10 @@ struct LoginView: View {
                         Text("Login").padding(12)
                             .background(Color.accentColor)
                             .foregroundColor(.white)
+                    }
+                    
+                    Button("Olvidé contraseña") {
+                        coordinator.present(sheet: .password)
                     }
                 }
             }
