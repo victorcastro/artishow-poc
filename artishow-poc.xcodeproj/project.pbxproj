@@ -41,6 +41,7 @@
 		E8E3F66D29FB0C3D0024E804 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E3F66C29FB0C3D0024E804 /* Colors.xcassets */; };
 		E8E3F67029FB0FF30024E804 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E3F66F29FB0FF30024E804 /* Color + Extension.swift */; };
 		E8E3F67229FB131F0024E804 /* ButtonBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E3F67129FB131F0024E804 /* ButtonBack.swift */; };
+		E8E3F67429FB1A540024E804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E3F67329FB1A540024E804 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		E8E3F66C29FB0C3D0024E804 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E8E3F66F29FB0FF30024E804 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
 		E8E3F67129FB131F0024E804 /* ButtonBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBack.swift; sourceTree = "<group>"; };
+		E8E3F67329FB1A540024E804 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 				E8474D6629F0D08200E2E0B1 /* Assets.xcassets */,
 				E8E3F66C29FB0C3D0024E804 /* Colors.xcassets */,
 				E8BCB01E29F0D7370086A8A0 /* Preview Content */,
+				E8E3F67329FB1A540024E804 /* LaunchScreen.storyboard */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				E8474D7129F0D11200E2E0B1 /* GoogleService-Info.plist in Resources */,
 				E8E3F66D29FB0C3D0024E804 /* Colors.xcassets in Resources */,
 				E8BCB02029F0D7370086A8A0 /* Preview Assets.xcassets in Resources */,
+				E8E3F67429FB1A540024E804 /* LaunchScreen.storyboard in Resources */,
 				E8474D6729F0D08200E2E0B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -646,6 +650,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -681,6 +686,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
