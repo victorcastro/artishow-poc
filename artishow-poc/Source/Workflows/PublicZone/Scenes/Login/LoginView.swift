@@ -18,15 +18,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack(spacing: 40) {
-            HStack {
-                Spacer()
-                Button {
-                    coordinator.push(.register)
-                    // vm.signUpWithEmail(email: username, paswd: password)
-                } label: {
-                    Text("Registrarme")
-                }
-            }
+            
             Spacer()
             VStack(spacing: 15) {
                 TextField("Usuario", text: $username).textFieldStyle(.roundedBorder)
@@ -59,10 +51,11 @@ struct LoginView: View {
                     .padding(12)
                     .background(Color.accentColor)
                     .foregroundColor(.white)
-
+                
             }
-        }
-        .padding()
+        }.padding()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(leading: BackButton())
     }
 }
 

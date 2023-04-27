@@ -38,6 +38,9 @@
 		E8E087A829F8D6D0008428E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087A729F8D6D0008428E7 /* Constants.swift */; };
 		E8E087AA29F8D7AD008428E7 /* CoordinatorContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087A929F8D7AD008428E7 /* CoordinatorContent.swift */; };
 		E8E087AF29F8DC1A008428E7 /* PrivateZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E087AE29F8DC1A008428E7 /* PrivateZoneView.swift */; };
+		E8E3F66D29FB0C3D0024E804 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E3F66C29FB0C3D0024E804 /* Colors.xcassets */; };
+		E8E3F67029FB0FF30024E804 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E3F66F29FB0FF30024E804 /* Color + Extension.swift */; };
+		E8E3F67229FB131F0024E804 /* ButtonBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E3F67129FB131F0024E804 /* ButtonBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +72,9 @@
 		E8E087A729F8D6D0008428E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E8E087A929F8D7AD008428E7 /* CoordinatorContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorContent.swift; sourceTree = "<group>"; };
 		E8E087AE29F8DC1A008428E7 /* PrivateZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateZoneView.swift; sourceTree = "<group>"; };
+		E8E3F66C29FB0C3D0024E804 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E8E3F66F29FB0FF30024E804 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		E8E3F67129FB131F0024E804 /* ButtonBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				E8474D6629F0D08200E2E0B1 /* Assets.xcassets */,
+				E8E3F66C29FB0C3D0024E804 /* Colors.xcassets */,
 				E8BCB01E29F0D7370086A8A0 /* Preview Content */,
 			);
 			path = Assets;
@@ -242,6 +249,7 @@
 		E8BCB02329F0D7C30086A8A0 /* Componets */ = {
 			isa = PBXGroup;
 			children = (
+				E8E3F66A29FAE20F0024E804 /* Commons */,
 				E8E0879D29F8D09D008428E7 /* RootViewController */,
 			);
 			path = Componets;
@@ -363,10 +371,35 @@
 		E8E087A429F8D6AF008428E7 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				E8E3F66E29FB0F410024E804 /* Extensions */,
 				E8E087A729F8D6D0008428E7 /* Constants.swift */,
 				E8E087A529F8D6C0008428E7 /* Utils.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E8E3F66A29FAE20F0024E804 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				E8E3F66B29FAE2190024E804 /* ButtonBack */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		E8E3F66B29FAE2190024E804 /* ButtonBack */ = {
+			isa = PBXGroup;
+			children = (
+				E8E3F67129FB131F0024E804 /* ButtonBack.swift */,
+			);
+			path = ButtonBack;
+			sourceTree = "<group>";
+		};
+		E8E3F66E29FB0F410024E804 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8E3F66F29FB0FF30024E804 /* Color + Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8474D7129F0D11200E2E0B1 /* GoogleService-Info.plist in Resources */,
+				E8E3F66D29FB0C3D0024E804 /* Colors.xcassets in Resources */,
 				E8BCB02029F0D7370086A8A0 /* Preview Assets.xcassets in Resources */,
 				E8474D6729F0D08200E2E0B1 /* Assets.xcassets in Resources */,
 			);
@@ -456,6 +490,7 @@
 				E8E0878E29F8CF33008428E7 /* RegisterView.swift in Sources */,
 				E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */,
 				E8E0879729F8D005008428E7 /* ArtishowView.swift in Sources */,
+				E8E3F67229FB131F0024E804 /* ButtonBack.swift in Sources */,
 				E83D697229FA088A00DF95A2 /* VerifyAccount.swift in Sources */,
 				E8E087A629F8D6C0008428E7 /* Utils.swift in Sources */,
 				E8E0879C29F8D075008428E7 /* PasswordView.swift in Sources */,
@@ -468,6 +503,7 @@
 				E83D696F29F9E97700DF95A2 /* MenuProfileView.swift in Sources */,
 				E8E087AF29F8DC1A008428E7 /* PrivateZoneView.swift in Sources */,
 				E83D696C29F9E8CA00DF95A2 /* AccountView.swift in Sources */,
+				E8E3F67029FB0FF30024E804 /* Color + Extension.swift in Sources */,
 				E8E0879929F8D015008428E7 /* FavoritesView.swift in Sources */,
 				E83D697529FA08EA00DF95A2 /* VerifyScreenView.swift in Sources */,
 				E8E0878829F8CD8B008428E7 /* PhotoScreenView.swift in Sources */,
@@ -606,7 +642,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "artishow-poc/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Artishow POC";
+				INFOPLIST_KEY_CFBundleDisplayName = Artishow;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -641,7 +677,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "artishow-poc/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Artishow POC";
+				INFOPLIST_KEY_CFBundleDisplayName = Artishow;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
