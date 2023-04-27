@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuAccountView: View {
+struct AccountView: View {
     var body: some View {
         VStack {
             Text("username: victor@castro.com")
@@ -16,8 +16,8 @@ struct MenuAccountView: View {
     }
 }
 
-struct MenuAccountView_Previews: PreviewProvider {
+struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuAccountView()
+        AccountView()
     }
 }

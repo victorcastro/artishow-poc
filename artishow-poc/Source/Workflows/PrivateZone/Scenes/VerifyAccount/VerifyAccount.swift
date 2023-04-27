@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuVerifyAccount: View {
+struct VerifyAccount: View {
     var body: some View {
         VStack {
             List {
@@ -29,6 +29,6 @@ struct MenuVerifyAccount: View {
 
 struct MenuVerifyAccount_Previews: PreviewProvider {
     static var previews: some View {
-        MenuVerifyAccount()
+        VerifyAccount()
     }
 }

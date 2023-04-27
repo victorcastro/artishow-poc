@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct MenuProfileView: View {
+struct ProfileView: View {
     var body: some View {
         VStack {
             Text("Nombres: Victor Hugo")
@@ -16,8 +16,8 @@ struct MenuProfileView: View {
     }
 }
 
-struct MenuProfileView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuProfileView()
+        ProfileView()
     }
 }

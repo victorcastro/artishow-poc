@@ -18,7 +18,7 @@ struct MenuView: View {
                     Section(header: Text("CUENTA")) {
                         Text("Accesos al sistema")
                         Text("Nombres completos")
-                        NavigationLink(destination: MenuVerifyAccount()) {
+                        NavigationLink(destination: VerifyAccount()) {
                             Text("Verificación de cuenta")
                         }
                     }

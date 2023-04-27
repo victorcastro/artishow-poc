@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E83D696C29F9E8CA00DF95A2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D696B29F9E8CA00DF95A2 /* AccountView.swift */; };
 		E83D696F29F9E97700DF95A2 /* MenuProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D696E29F9E97700DF95A2 /* MenuProfileView.swift */; };
-		E83D697229FA088A00DF95A2 /* MenuVerifyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D697129FA088A00DF95A2 /* MenuVerifyAccount.swift */; };
+		E83D697229FA088A00DF95A2 /* VerifyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D697129FA088A00DF95A2 /* VerifyAccount.swift */; };
 		E83D697529FA08EA00DF95A2 /* VerifyScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D697429FA08EA00DF95A2 /* VerifyScreenView.swift */; };
 		E83D697A29FA24E300DF95A2 /* PublicZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D697929FA24E300DF95A2 /* PublicZoneView.swift */; };
 		E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		E83D696B29F9E8CA00DF95A2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E83D696E29F9E97700DF95A2 /* MenuProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileView.swift; sourceTree = "<group>"; };
-		E83D697129FA088A00DF95A2 /* MenuVerifyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVerifyAccount.swift; sourceTree = "<group>"; };
+		E83D697129FA088A00DF95A2 /* VerifyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyAccount.swift; sourceTree = "<group>"; };
 		E83D697429FA08EA00DF95A2 /* VerifyScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyScreenView.swift; sourceTree = "<group>"; };
 		E83D697929FA24E300DF95A2 /* PublicZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicZoneView.swift; sourceTree = "<group>"; };
 		E8474D5F29F0D08000E2E0B1 /* artishow-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "artishow-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,29 +87,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E83D696A29F9E8B900DF95A2 /* MenuAccount */ = {
+		E80318BC29FA99500088265F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0877F29F8CD28008428E7 /* Photos */,
+				E83D696A29F9E8B900DF95A2 /* Account */,
+				E83D696D29F9E96E00DF95A2 /* Profile */,
+				E83D697029FA087800DF95A2 /* VerifyAccount */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E80318BD29FA9AC70088265F /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				E8ACB33729F77F0B000D11A4 /* Home */,
+				E8E0879029F8CF7D008428E7 /* Favorites */,
+				E8E0879129F8CF96008428E7 /* Artishow */,
+				E8ACB33A29F78647000D11A4 /* Menu */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		E80318BE29FA9AF80088265F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E8E0879A29F8D06D008428E7 /* Password */,
+				E8E0878C29F8CF0C008428E7 /* Register */,
+				E8BCB02529F0D7F80086A8A0 /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E83D696A29F9E8B900DF95A2 /* Account */ = {
 			isa = PBXGroup;
 			children = (
 				E83D696B29F9E8CA00DF95A2 /* AccountView.swift */,
 			);
-			path = MenuAccount;
+			path = Account;
 			sourceTree = "<group>";
 		};
-		E83D696D29F9E96E00DF95A2 /* MenuProfile */ = {
+		E83D696D29F9E96E00DF95A2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				E83D696E29F9E97700DF95A2 /* MenuProfileView.swift */,
 			);
-			path = MenuProfile;
+			path = Profile;
 			sourceTree = "<group>";
 		};
-		E83D697029FA087800DF95A2 /* MenuVerifyAccount */ = {
+		E83D697029FA087800DF95A2 /* VerifyAccount */ = {
 			isa = PBXGroup;
 			children = (
 				E83D697329FA08D800DF95A2 /* VerifyScreen */,
-				E83D697129FA088A00DF95A2 /* MenuVerifyAccount.swift */,
+				E83D697129FA088A00DF95A2 /* VerifyAccount.swift */,
 			);
-			path = MenuVerifyAccount;
+			path = VerifyAccount;
 			sourceTree = "<group>";
 		};
 		E83D697329FA08D800DF95A2 /* VerifyScreen */ = {
@@ -178,9 +210,6 @@
 		E8ACB33A29F78647000D11A4 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				E83D697029FA087800DF95A2 /* MenuVerifyAccount */,
-				E83D696D29F9E96E00DF95A2 /* MenuProfile */,
-				E83D696A29F9E8B900DF95A2 /* MenuAccount */,
 				E8ACB33B29F78653000D11A4 /* MenuView.swift */,
 			);
 			path = Menu;
@@ -239,6 +268,7 @@
 		E8E0877F29F8CD28008428E7 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				E8E0878429F8CD6D008428E7 /* PhotoScreen */,
 				E8E0878229F8CD44008428E7 /* PhotosView.swift */,
 			);
 			path = Photos;
@@ -256,9 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				E83D697929FA24E300DF95A2 /* PublicZoneView.swift */,
-				E8E0879A29F8D06D008428E7 /* Password */,
-				E8E0878C29F8CF0C008428E7 /* Register */,
-				E8BCB02529F0D7F80086A8A0 /* Login */,
+				E80318BE29FA9AF80088265F /* Scenes */,
 			);
 			path = PublicZone;
 			sourceTree = "<group>";
@@ -267,10 +295,8 @@
 			isa = PBXGroup;
 			children = (
 				E8E087AE29F8DC1A008428E7 /* PrivateZoneView.swift */,
-				E8ACB33729F77F0B000D11A4 /* Home */,
-				E8E0879029F8CF7D008428E7 /* Favorites */,
-				E8E0879129F8CF96008428E7 /* Artishow */,
-				E8ACB33A29F78647000D11A4 /* Menu */,
+				E80318BD29FA9AC70088265F /* TabViews */,
+				E80318BC29FA99500088265F /* Scenes */,
 			);
 			path = PrivateZone;
 			sourceTree = "<group>";
@@ -294,8 +320,6 @@
 		E8E0879129F8CF96008428E7 /* Artishow */ = {
 			isa = PBXGroup;
 			children = (
-				E8E0878429F8CD6D008428E7 /* PhotoScreen */,
-				E8E0877F29F8CD28008428E7 /* Photos */,
 				E8E0879629F8D005008428E7 /* ArtishowView.swift */,
 			);
 			path = Artishow;
@@ -432,7 +456,7 @@
 				E8E0878E29F8CF33008428E7 /* RegisterView.swift in Sources */,
 				E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */,
 				E8E0879729F8D005008428E7 /* ArtishowView.swift in Sources */,
-				E83D697229FA088A00DF95A2 /* MenuVerifyAccount.swift in Sources */,
+				E83D697229FA088A00DF95A2 /* VerifyAccount.swift in Sources */,
 				E8E087A629F8D6C0008428E7 /* Utils.swift in Sources */,
 				E8E0879C29F8D075008428E7 /* PasswordView.swift in Sources */,
 				E8E087A829F8D6D0008428E7 /* Constants.swift in Sources */,
