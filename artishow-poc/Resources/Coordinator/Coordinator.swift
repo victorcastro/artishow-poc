@@ -53,8 +53,8 @@ extension Coordinator {
             .publicZone: AnyView(PublicZoneView()),
             .login: AnyView(LoginView()),
             .register: AnyView(RegisterView()),
-            .menuAccount: AnyView(MenuAccountView()),
-            .menuProfile: AnyView(MenuProfileView()),
+            .menuAccount: AnyView(AccountView()),
+            .menuProfile: AnyView(ProfileView()),
         ]
         
         pages[page] ?? AnyView(EmptyView())
