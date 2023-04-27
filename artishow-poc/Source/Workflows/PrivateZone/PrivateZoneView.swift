@@ -8,25 +8,35 @@
 import SwiftUI
 
 struct PrivateZoneView: View {
+    
+    @State var isArtistEnabled = true
+    
     var body: some View {
         NavigationView {
             TabView {
                 HomeView()
                     .tabItem {
-                        Text("Home")
+                        Label("Home", systemImage: "house.fill")
                     }
                 
                 FavoritesView()
                     .tabItem {
-                        Text("Favorites")
+                        Label("Favorites", systemImage: "heart.fill")
                     }
+                
+                if isArtistEnabled {
+                    ArtishowView()
+                        .tabItem {
+                            Label("Artist", systemImage: "figure.wave")
+                        }
+                }
                 
                 MenuView()
                     .tabItem {
-                        Text("Menu")
+                        Label("Menu", systemImage: "line.3.horizontal")
                     }
             }
-        }
+        }.accentColor(.red)
     }
 }
 

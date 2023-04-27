@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E83D696C29F9E8CA00DF95A2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D696B29F9E8CA00DF95A2 /* AccountView.swift */; };
+		E83D696F29F9E97700DF95A2 /* MenuProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D696E29F9E97700DF95A2 /* MenuProfileView.swift */; };
+		E83D697229FA088A00DF95A2 /* MenuVerifyAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D697129FA088A00DF95A2 /* MenuVerifyAccount.swift */; };
+		E83D697529FA08EA00DF95A2 /* VerifyScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D697429FA08EA00DF95A2 /* VerifyScreenView.swift */; };
+		E83D697A29FA24E300DF95A2 /* PublicZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D697929FA24E300DF95A2 /* PublicZoneView.swift */; };
 		E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */; };
 		E8474D6529F0D08000E2E0B1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8474D6429F0D08000E2E0B1 /* LoginView.swift */; };
 		E8474D6729F0D08200E2E0B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8474D6629F0D08200E2E0B1 /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E83D696B29F9E8CA00DF95A2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		E83D696E29F9E97700DF95A2 /* MenuProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileView.swift; sourceTree = "<group>"; };
+		E83D697129FA088A00DF95A2 /* MenuVerifyAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVerifyAccount.swift; sourceTree = "<group>"; };
+		E83D697429FA08EA00DF95A2 /* VerifyScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyScreenView.swift; sourceTree = "<group>"; };
+		E83D697929FA24E300DF95A2 /* PublicZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicZoneView.swift; sourceTree = "<group>"; };
 		E8474D5F29F0D08000E2E0B1 /* artishow-poc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "artishow-poc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8474D6429F0D08000E2E0B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -77,6 +87,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E83D696A29F9E8B900DF95A2 /* MenuAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E83D696B29F9E8CA00DF95A2 /* AccountView.swift */,
+			);
+			path = MenuAccount;
+			sourceTree = "<group>";
+		};
+		E83D696D29F9E96E00DF95A2 /* MenuProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E83D696E29F9E97700DF95A2 /* MenuProfileView.swift */,
+			);
+			path = MenuProfile;
+			sourceTree = "<group>";
+		};
+		E83D697029FA087800DF95A2 /* MenuVerifyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				E83D697329FA08D800DF95A2 /* VerifyScreen */,
+				E83D697129FA088A00DF95A2 /* MenuVerifyAccount.swift */,
+			);
+			path = MenuVerifyAccount;
+			sourceTree = "<group>";
+		};
+		E83D697329FA08D800DF95A2 /* VerifyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E83D697429FA08EA00DF95A2 /* VerifyScreenView.swift */,
+			);
+			path = VerifyScreen;
+			sourceTree = "<group>";
+		};
 		E8474D5629F0D08000E2E0B1 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +178,9 @@
 		E8ACB33A29F78647000D11A4 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				E83D697029FA087800DF95A2 /* MenuVerifyAccount */,
+				E83D696D29F9E96E00DF95A2 /* MenuProfile */,
+				E83D696A29F9E8B900DF95A2 /* MenuAccount */,
 				E8ACB33B29F78653000D11A4 /* MenuView.swift */,
 			);
 			path = Menu;
@@ -209,6 +255,7 @@
 		E8E0878929F8CDE3008428E7 /* PublicZone */ = {
 			isa = PBXGroup;
 			children = (
+				E83D697929FA24E300DF95A2 /* PublicZoneView.swift */,
 				E8E0879A29F8D06D008428E7 /* Password */,
 				E8E0878C29F8CF0C008428E7 /* Register */,
 				E8BCB02529F0D7F80086A8A0 /* Login */,
@@ -247,19 +294,11 @@
 		E8E0879129F8CF96008428E7 /* Artishow */ = {
 			isa = PBXGroup;
 			children = (
-				E8E0879429F8CFEB008428E7 /* Sections */,
+				E8E0878429F8CD6D008428E7 /* PhotoScreen */,
+				E8E0877F29F8CD28008428E7 /* Photos */,
 				E8E0879629F8D005008428E7 /* ArtishowView.swift */,
 			);
 			path = Artishow;
-			sourceTree = "<group>";
-		};
-		E8E0879429F8CFEB008428E7 /* Sections */ = {
-			isa = PBXGroup;
-			children = (
-				E8E0878429F8CD6D008428E7 /* PhotoScreen */,
-				E8E0877F29F8CD28008428E7 /* Photos */,
-			);
-			path = Sections;
 			sourceTree = "<group>";
 		};
 		E8E0879A29F8D06D008428E7 /* Password */ = {
@@ -393,15 +432,20 @@
 				E8E0878E29F8CF33008428E7 /* RegisterView.swift in Sources */,
 				E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */,
 				E8E0879729F8D005008428E7 /* ArtishowView.swift in Sources */,
+				E83D697229FA088A00DF95A2 /* MenuVerifyAccount.swift in Sources */,
 				E8E087A629F8D6C0008428E7 /* Utils.swift in Sources */,
 				E8E0879C29F8D075008428E7 /* PasswordView.swift in Sources */,
 				E8E087A829F8D6D0008428E7 /* Constants.swift in Sources */,
 				E8474D6329F0D08000E2E0B1 /* AppDelegate.swift in Sources */,
 				E8E0878329F8CD44008428E7 /* PhotosView.swift in Sources */,
+				E83D697A29FA24E300DF95A2 /* PublicZoneView.swift in Sources */,
 				E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */,
 				E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */,
+				E83D696F29F9E97700DF95A2 /* MenuProfileView.swift in Sources */,
 				E8E087AF29F8DC1A008428E7 /* PrivateZoneView.swift in Sources */,
+				E83D696C29F9E8CA00DF95A2 /* AccountView.swift in Sources */,
 				E8E0879929F8D015008428E7 /* FavoritesView.swift in Sources */,
+				E83D697529FA08EA00DF95A2 /* VerifyScreenView.swift in Sources */,
 				E8E0878829F8CD8B008428E7 /* PhotoScreenView.swift in Sources */,
 				E8E087AA29F8D7AD008428E7 /* CoordinatorContent.swift in Sources */,
 				E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */,
@@ -539,11 +583,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "artishow-poc/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Artishow POC";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,11 +619,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "artishow-poc/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Artishow POC";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

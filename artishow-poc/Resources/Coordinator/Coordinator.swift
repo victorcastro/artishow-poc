@@ -47,34 +47,34 @@ extension Coordinator {
     
     @ViewBuilder
     func build(page: Page) -> some View {
-        switch page {
-        case .privateZone:
-            PrivateZoneView()
-            
-        case .login:
-            LoginView()
-            
-        case .register:
-            RegisterView()
-        }
+        let pages: [Page: AnyView] = [
+            .photos: AnyView(PhotosView()),
+            .privateZone: AnyView(PrivateZoneView()),
+            .publicZone: AnyView(PublicZoneView()),
+            .login: AnyView(LoginView()),
+            .register: AnyView(RegisterView()),
+            .menuAccount: AnyView(MenuAccountView()),
+            .menuProfile: AnyView(MenuProfileView()),
+        ]
+        
+        pages[page] ?? AnyView(EmptyView())
     }
     
     @ViewBuilder
     func build(sheet: Sheet) -> some View {
-        switch sheet {
-        case .photos:
-            PhotosView()
-            
-        case .password:
-            PasswordView()
-        }
+        let sheets: [Sheet: AnyView] = [
+            .password: AnyView(PasswordView()),
+        ]
+        
+        sheets[sheet] ?? AnyView(EmptyView())
     }
     
     @ViewBuilder
     func build(fullScreenCover: FullScreenCover) -> some View {
-        switch fullScreenCover {
-        case .photoScreen:
-            PhotoScreenView()
-        }
+        let fullScreens: [FullScreenCover: AnyView] = [
+            .photoScreen: AnyView(PhotoScreenView()),
+        ]
+        
+        fullScreens[fullScreenCover] ?? AnyView(EmptyView())
     }
 }

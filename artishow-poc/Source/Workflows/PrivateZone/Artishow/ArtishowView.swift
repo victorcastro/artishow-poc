@@ -9,7 +9,23 @@ import SwiftUI
 
 struct ArtishowView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 20) {
+            Circle()
+                .foregroundColor(.red)
+            
+                .frame(maxWidth: 150)
+                
+            Text("Hola, Soy CariLocuras")
+            Text("5.4")
+            
+            List {
+                Section(header: Text("PERSONAJE")) {
+                    Text("Mi personake")
+                    Text("Mis calificaciones")
+                    Text("Zonas de trabajo")
+                }
+            }
+        }
     }
 }
 

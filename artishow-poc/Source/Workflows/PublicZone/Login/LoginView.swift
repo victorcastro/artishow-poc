@@ -16,8 +16,6 @@ struct LoginView: View {
     
     @StateObject private var vm = LoginViewModel()
     
-    // https://www.youtube.com/watch?v=fT5QvMQ6uAc&ab_channel=CodingWithUsman
-    
     var body: some View {
         VStack(spacing: 40) {
             HStack {
@@ -39,6 +37,7 @@ struct LoginView: View {
                         
                         // TODO: Change method in ViewModel
                         coordinator.isLoggedIn = true
+                        coordinator.popToRoot()
                     } label: {
                         Text("Login").padding(12)
                             .background(Color.accentColor)

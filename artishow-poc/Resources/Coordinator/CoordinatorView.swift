@@ -13,7 +13,7 @@ struct CoordinatorView: View {
     
     var body: some View {
         NavigationStack(path: $coordinator.path) {
-            coordinator.build(page: coordinator.isLoggedIn ? .privateZone : .login)
+            coordinator.build(page: coordinator.isLoggedIn ? .privateZone : .publicZone)
                 .navigationDestination(for: Page.self) { page in
                     coordinator.build(page: page)
                 }

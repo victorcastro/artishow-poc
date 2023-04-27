@@ -12,18 +12,25 @@ struct MenuView: View {
     @EnvironmentObject private var coordinator: Coordinator
     
     var body: some View {
-        VStack {
-            List {
-                Text("Cambiar contraseña")
-                Text("Cambiar correo")
-            }
-            
-            Button("Cerrar sesión") {
-                // TODO: Change method in ViewModel
-                coordinator.isLoggedIn = false
-            }
+        NavigationView {
+            VStack {
+                List {
+                    Section(header: Text("CUENTA")) {
+                        Text("Accesos al sistema")
+                        Text("Nombres completos")
+                        NavigationLink(destination: MenuVerifyAccount()) {
+                            Text("Verificación de cuenta")
+                        }
+                    }
+                }.listStyle(.plain)
+                
+                Button("Cerrar sesión") {
+                    // TODO: Change method in ViewModel
+                    coordinator.isLoggedIn = false
+                }.padding()
+                    .buttonStyle(.bordered)
+            }.navigationTitle("Menu principal")
         }
-        .navigationTitle("Accesos al sistema")
     }
 }
 

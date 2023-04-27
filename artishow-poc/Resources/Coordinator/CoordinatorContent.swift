@@ -8,27 +8,21 @@
 import Foundation
 
 enum Page: String, Identifiable {
-    case login, register        // Public Zone
-    case privateZone            // Private Zone
+    case publicZone, login, register
+    case privateZone, photos
+    case menuProfile, menuAccount
     
-    var id: String {
-        self.rawValue
-    }
+    var id: String { self.rawValue }
 }
 
 enum Sheet: String, Identifiable {
-    case password           // Public Zone
-    case photos             // Private Zone
+    case password
     
-    var id: String {
-        self.rawValue
-    }
+    var id: String { self.rawValue }
 }
 
 enum FullScreenCover: String, Identifiable {
-    case photoScreen        // Private Zone
+    case photoScreen
     
-    var id: String {
-        self.rawValue
-    }
+    var id: String { self.rawValue }
 }

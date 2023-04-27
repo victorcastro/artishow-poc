@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct PhotosView: View {
+    
+    @EnvironmentObject private var coordinator: Coordinator
+    
     var body: some View {
-        Text("Hello, Photos!")
+        VStack {
+            Text("Hello, Photos!")
+            Button("Pagina 2") {
+                coordinator.push(.menuAccount)
+            }
+        }
     }
 }
 
