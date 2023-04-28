@@ -12,19 +12,35 @@ struct PublicZoneView: View {
     @EnvironmentObject private var coordinator: Coordinator
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer()
-                HStack {
-                    Button("Registrarme") {
-                        coordinator.push(.register)
-                    }.buttonStyle(.bordered)
-                    Button("Ingresar") {
-                        coordinator.push(.login)
-                    }.buttonStyle(.bordered)
+        VStack() {
+            Spacer()
+            VStack(alignment: .leading) {
+                VStack {
+                    Text("Hola ARTIFANATICO")
+                        .font(.poppins(.bold, size: 30))
+                        .foregroundColor(Color.dark2)
+                        .padding(.bottom, 8)
+                    Text("Bienvenido a la nueva forma de conseguir una mejor experiencia en tu evento")
+                        .font(.poppins(.regular, size: 14))
+                        .foregroundColor(Color.dark2)
+                        .padding(.bottom, 20)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
+                .padding(.horizontal, 38)
+                
+                TabOptionTwo()
+                
+                
             }
+            .frame(maxWidth: .infinity)
+            .padding(.top, 50)
+            .background(.white)
+            .cornerRadius(40, corners: .topLeft)
+            .cornerRadius(40, corners: .topRight)
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.primary)
+        .ignoresSafeArea()
     }
 }
 

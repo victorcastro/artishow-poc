@@ -42,7 +42,7 @@ struct LoginView: View {
                 }
             }
             
-            Text("O inicia sesión con")
+            Text("O inicia sesión con").font(.zenTokyo(.regular))
             
             Button {
                 vm.signInWithGoogle()
