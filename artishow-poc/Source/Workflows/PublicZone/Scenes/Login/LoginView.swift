@@ -15,6 +15,12 @@ struct LoginView: View {
     @State private var password: String = ""
     
     @StateObject private var vm = LoginViewModel()
+    @FocusState private var loginFieldFocus: LogInField?
+    
+    enum LogInField {
+        case username
+        case password
+    }
     
     var body: some View {
         VStack(spacing: 40) {
@@ -27,8 +33,35 @@ struct LoginView: View {
             }
             
             VStack(spacing: 15) {
-                TextField("Usuario", text: $username).textFieldStyle(.roundedBorder)
-                TextField("Contraseña", text: $password).textFieldStyle(.roundedBorder)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Correo")
+                        .font(.poppins(.regular, size: 12))
+                        .foregroundColor(Color.dark3)
+                    TextField("", text: $username)
+                        .font(.poppins(.regular))
+                        .foregroundColor(Color.dark2)
+                        .keyboardType(.emailAddress)
+                        .focused($loginFieldFocus, equals: .username)
+                        .submitLabel(.next)
+                        .onSubmit {
+                            self.loginFieldFocus = .password
+                        }
+                    Divider()
+                }
+                
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Contraseña")
+                        .font(.poppins(.regular, size: 12))
+                        .foregroundColor(Color.dark3)
+                    SecureField("", text: $password)
+                        .font(.poppins(.regular))
+                        .foregroundColor(Color.dark2)
+                        .keyboardType(.emailAddress)
+                        .focused($loginFieldFocus, equals: .password)
+                        .submitLabel(.done)
+                    Divider()
+                }
+                
                 
                 Button {
                     vm.signInWithEmail(email: username, paswd: password)
@@ -97,9 +130,13 @@ struct LoginView: View {
                     }
                     .padding(12)
                     .frame(maxWidth: .infinity)
+                    
                 }
                 .background(Color.white)
-                .cornerRadius(10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(Color.dark3, lineWidth: 1)
+                )
                 
                 Button {
                     
@@ -120,12 +157,19 @@ struct LoginView: View {
                 .cornerRadius(10)
             }
             
-           
             Spacer()
         }.padding(.horizontal, 38)
             .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: BackButton())
-            .background(Color.tertiary)
+            .background(Color.white)
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    loginFieldFocus = .username
+                }
+            }
+            .onTapGesture {
+                self.hideKeyboard()
+            }
     }
 }
 
