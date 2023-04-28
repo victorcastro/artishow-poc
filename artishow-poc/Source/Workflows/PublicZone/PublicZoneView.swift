@@ -14,12 +14,32 @@ struct PublicZoneView: View {
     var body: some View {
         VStack() {
             Spacer()
+            Image("splash-clown")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 370)
+                .position(x: 250, y: 350)
+            Spacer()
             VStack(alignment: .leading) {
                 VStack {
-                    Text("Hola ARTIFANATICO")
-                        .font(.poppins(.bold, size: 30))
-                        .foregroundColor(Color.dark2)
-                        .padding(.bottom, 8)
+                    HStack {
+                        Text("Hola!")
+                            .font(.poppins(.medium, size: 28))
+                            .foregroundColor(Color.dark2)
+                        HStack(spacing: 0) {
+                            Text("ARTI")
+                                .font(.zenTokyo(.regular, size: 28))
+                                // .font(.poppins(.bold, size: 30))
+                                .foregroundColor(Color.dark2)
+                            Text("FANATICO")
+                                .font(.zenTokyo(.regular, size: 28))
+                                // .font(.poppins(.bold, size: 30))
+                                .foregroundColor(Color.primary)
+                                
+                        }
+                    }
+                    .padding(.bottom, 8)
+                    
                     Text("Bienvenido a la nueva forma de conseguir una mejor experiencia en tu evento")
                         .font(.poppins(.regular, size: 14))
                         .foregroundColor(Color.dark2)

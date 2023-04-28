@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension Color {
+    static let background = Color("background")
     static let primary = Color("primary")
     static let secondary = Color("secondary")
     static let tertiary = Color("tertiary")
@@ -21,4 +22,8 @@ extension Color {
     static let alertSuccess = Color("success")
     static let alertSuccessfully = Color("successfully")
     static let alertWarning = Color("warning")
+    
+    static let socialFacebook = Color("facebook")
+    static let socialGoogle = Color("google")
+    static let socialApple = Color.black
 }

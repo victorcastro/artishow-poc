@@ -39,7 +39,7 @@ struct TabOptionTwo: View {
                 coordinator.push(.login)
             } label: {
                 Text("Ingresar")
-                    .font(.poppins(.semiBold, size: 26))
+                    .font(.poppins(.semiBold, size: 24))
                     .foregroundColor(Color.white)
             }
             .frame(maxWidth: .infinity)
