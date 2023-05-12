@@ -35,5 +35,25 @@
             <string>Poppins-ThinItalic.ttf</string>
             <string>ZenTokyoZoo-Regular.ttf</string>
         </array>
+        <key>CFBundleURLTypes</key>
+        <array>
+          <dict>
+          <key>CFBundleURLSchemes</key>
+          <array>
+            <string>fb324452896768890</string>
+          </array>
+          </dict>
+        </array>
+        <key>FacebookAppID</key>
+        <string>324452896768890</string>
+        <key>FacebookDisplayName</key>
+        <string>artishow-poc</string>
+        <key>LSApplicationQueriesSchemes</key>
+        <array>
+          <string>fbapi</string>
+          <string>fb-messenger-api</string>
+          <string>fbauth2</string>
+          <string>fbshareextension</string>
+        </array>
     </dict>
 </plist>

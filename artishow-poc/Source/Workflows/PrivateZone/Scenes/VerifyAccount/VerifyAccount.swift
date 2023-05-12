@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct VerifyAccount: View {
+    
     var body: some View {
         VStack {
             List {
@@ -22,8 +23,9 @@ struct VerifyAccount: View {
                 }
             }.listStyle(.plain)
             
-        }.navigationTitle("Verificacion de cuenta")
-            .navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationTitle("Verificacion de cuenta")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

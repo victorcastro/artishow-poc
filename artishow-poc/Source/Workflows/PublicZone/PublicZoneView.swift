@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import VCanvasKit
 
 struct PublicZoneView: View {
     
@@ -29,17 +30,14 @@ struct PublicZoneView: View {
                         HStack(spacing: 0) {
                             Text("ARTI")
                                 .font(.zenTokyo(.regular, size: 28))
-                                // .font(.poppins(.bold, size: 30))
                                 .foregroundColor(Color.dark2)
                             Text("FANATICO")
                                 .font(.zenTokyo(.regular, size: 28))
-                                // .font(.poppins(.bold, size: 30))
                                 .foregroundColor(Color.primary)
-                                
+                            
                         }
                     }
                     .padding(.bottom, 8)
-                    
                     Text("Bienvenido a la nueva forma de conseguir una mejor experiencia en tu evento")
                         .font(.poppins(.regular, size: 14))
                         .foregroundColor(Color.dark2)
@@ -58,7 +56,7 @@ struct PublicZoneView: View {
             .cornerRadius(40, corners: .topLeft)
             .cornerRadius(40, corners: .topRight)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        // .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.primary)
         .ignoresSafeArea()
     }

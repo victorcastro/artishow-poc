@@ -8,13 +8,20 @@
 import Foundation
 import Firebase
 import GoogleSignIn
+import FirebaseAnalytics
 
 class LoginViewModel: ObservableObject {
     
     @Published var signIn: Firebase.User? = nil
     
     func signInWithEmail(email: String, paswd: String) {
-        let success = false
+        
+        Analytics.logEvent("signInWithEmail", parameters: [
+          AnalyticsParameterItemID: email,
+          AnalyticsParameterItemName: "signInWithEmail with \(email)",
+          AnalyticsParameterContentType: "sign-in",
+        ])
+        
         Auth.auth().signIn(withEmail: email, password: paswd) { [weak self] result, error in
             if let res = result, error == nil {
                 self?.signIn = res.user

@@ -13,13 +13,7 @@ import GoogleSignIn
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         FirebaseApp.configure()
-        
-        let navigationBarAppearance = UINavigationBarAppearance()
-        navigationBarAppearance.configureWithTransparentBackground()
-        navigationBarAppearance.backgroundColor = .clear
-        navigationBarAppearance.largeTitleTextAttributes = [.font: UIFont(name: "Poppins-Bold", size: 26)!]
-        UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
-        
+
         return true
     }
     
@@ -32,6 +26,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct artishow_pocApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
+    init() {
+        UINavigationBar.appearance().standardAppearance = .customAppearance
+        UITabBar.appearance().standardAppearance = .customAppearance
+    }
     
     var body: some Scene {
         WindowGroup {

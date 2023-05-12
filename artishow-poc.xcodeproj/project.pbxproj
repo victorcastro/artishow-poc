@@ -23,8 +23,10 @@
 		E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42629F0D3650026EEAE /* FirebaseAuth */; };
 		E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42829F0D3650026EEAE /* FirebaseCrashlytics */; };
 		E847D42B29F0D3650026EEAE /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42A29F0D3650026EEAE /* FirebaseMessaging */; };
+		E89405042A0B22D700DFBB69 /* Appearance + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89405032A0B22D700DFBB69 /* Appearance + Extension.swift */; };
 		E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACB33829F77F19000D11A4 /* HomeView.swift */; };
 		E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACB33B29F78653000D11A4 /* MenuView.swift */; };
+		E8B9C74F2A009D8100864312 /* VCanvasKit in Frameworks */ = {isa = PBXBuildFile; productRef = E8B9C74E2A009D8100864312 /* VCanvasKit */; };
 		E8BCB02029F0D7370086A8A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BCB01F29F0D7370086A8A0 /* Preview Assets.xcassets */; };
 		E8BCB02929F0DD050086A8A0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = E8BCB02829F0DD050086A8A0 /* GoogleSignIn */; };
 		E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BCB02A29F0DF010086A8A0 /* LoginViewModel.swift */; };
@@ -80,6 +82,7 @@
 		E8474D6429F0D08000E2E0B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E8474D6629F0D08200E2E0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8474D7029F0D11200E2E0B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E89405032A0B22D700DFBB69 /* Appearance + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appearance + Extension.swift"; sourceTree = "<group>"; };
 		E8ACB33829F77F19000D11A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E8ACB33B29F78653000D11A4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		E8BCB01F29F0D7370086A8A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -121,6 +124,7 @@
 		E8E3F68829FB20C20024E804 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		E8E3F68929FB20C20024E804 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		E8E3F68A29FB20C20024E804 /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E8F2D10D29FCC93C00E44159 /* artishow-poc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "artishow-poc.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 			files = (
 				E8BCB02929F0DD050086A8A0 /* GoogleSignIn in Frameworks */,
 				E847D42B29F0D3650026EEAE /* FirebaseMessaging in Frameworks */,
+				E8B9C74F2A009D8100864312 /* VCanvasKit in Frameworks */,
 				E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */,
 				E847D42529F0D3650026EEAE /* FirebaseAnalytics in Frameworks */,
 				E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */,
@@ -231,6 +236,7 @@
 		E8474D6129F0D08000E2E0B1 /* artishow-poc */ = {
 			isa = PBXGroup;
 			children = (
+				E8F2D10D29FCC93C00E44159 /* artishow-poc.entitlements */,
 				E8474D6229F0D08000E2E0B1 /* AppDelegate.swift */,
 				E8BCB02629F0DB540086A8A0 /* Info.plist */,
 				E8E087A229F8D629008428E7 /* Resources */,
@@ -457,6 +463,7 @@
 				E8E3F66F29FB0FF30024E804 /* Color + Extension.swift */,
 				E841325429FB291D008C7430 /* Font + Extension.swift */,
 				E841325629FB44E2008C7430 /* View + Extension.swift */,
+				E89405032A0B22D700DFBB69 /* Appearance + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -513,6 +520,7 @@
 				E8474D5B29F0D08000E2E0B1 /* Sources */,
 				E8474D5C29F0D08000E2E0B1 /* Frameworks */,
 				E8474D5D29F0D08000E2E0B1 /* Resources */,
+				E84479B429FC414C00C96623 /* Firebase Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -525,6 +533,7 @@
 				E847D42829F0D3650026EEAE /* FirebaseCrashlytics */,
 				E847D42A29F0D3650026EEAE /* FirebaseMessaging */,
 				E8BCB02829F0DD050086A8A0 /* GoogleSignIn */,
+				E8B9C74E2A009D8100864312 /* VCanvasKit */,
 			);
 			productName = "artishow-poc";
 			productReference = E8474D5F29F0D08000E2E0B1 /* artishow-poc.app */;
@@ -557,6 +566,7 @@
 			packageReferences = (
 				E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				E8BCB02729F0DD050086A8A0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				E8B9C74D2A009D8100864312 /* XCRemoteSwiftPackageReference "VCanvasKit" */,
 			);
 			productRefGroup = E8474D6029F0D08000E2E0B1 /* Products */;
 			projectDirPath = "";
@@ -601,6 +611,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E84479B429FC414C00C96623 /* Firebase Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Firebase Crashlytics";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run -gsp ${PROJECT_DIR}/artishow-poc/Resources/Frameworks/Firebase/GoogleService-Info.plist;\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8474D5B29F0D08000E2E0B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -621,6 +654,7 @@
 				E8E0878329F8CD44008428E7 /* PhotosView.swift in Sources */,
 				E83D697A29FA24E300DF95A2 /* PublicZoneView.swift in Sources */,
 				E8BCB02D29F0E0560086A8A0 /* RootViewController.swift in Sources */,
+				E89405042A0B22D700DFBB69 /* Appearance + Extension.swift in Sources */,
 				E841325A29FB5DDC008C7430 /* TabOptionTwo.swift in Sources */,
 				E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */,
 				E83D696F29F9E97700DF95A2 /* MenuProfileView.swift in Sources */,
@@ -759,8 +793,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "artishow-poc/artishow-poc.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
@@ -795,8 +831,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "artishow-poc/artishow-poc.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"artishow-poc/Assets/Preview Content\"";
 				DEVELOPMENT_TEAM = 4G9UQ8D789;
 				ENABLE_PREVIEWS = YES;
@@ -858,6 +896,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		E8B9C74D2A009D8100864312 /* XCRemoteSwiftPackageReference "VCanvasKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/victorcastro/VCanvasKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		E8BCB02729F0DD050086A8A0 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
@@ -888,6 +934,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E847D42329F0D3650026EEAE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseMessaging;
+		};
+		E8B9C74E2A009D8100864312 /* VCanvasKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8B9C74D2A009D8100864312 /* XCRemoteSwiftPackageReference "VCanvasKit" */;
+			productName = VCanvasKit;
 		};
 		E8BCB02829F0DD050086A8A0 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;

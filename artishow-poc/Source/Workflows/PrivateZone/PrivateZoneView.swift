@@ -36,7 +36,8 @@ struct PrivateZoneView: View {
                         Label("Menu", systemImage: "line.3.horizontal")
                     }
             }
-        }.accentColor(.red)
+            
+        }// .accentColor(Color.primary)
     }
 }
 
