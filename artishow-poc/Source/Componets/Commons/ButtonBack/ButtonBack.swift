@@ -16,7 +16,7 @@ struct BackButton: View {
             coordinator.pop()
         } label: {
             Image(systemName: "chevron.left")
-                .foregroundColor(.dark2)
+                .foregroundColor(.colorDark2)
         }
     }
 }

@@ -14,7 +14,6 @@ struct HomeView: View {
     let columns = [
         GridItem(.flexible(), spacing: 15),
         GridItem(.flexible(), spacing: 15),
-        // GridItem(.adaptive(minimum: 150), spacing: 15),
     ]
     
     @State private var scrollViewContentSize: CGSize = .zero
@@ -29,7 +28,7 @@ struct HomeView: View {
                     VStack(spacing: 5) {
                         ZStack(alignment: .center) {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.primary)
+                                .fill(Color.colorPrimary)
                             
                             Image("cat-all")
                                 .resizable()
@@ -46,7 +45,7 @@ struct HomeView: View {
                     VStack(spacing: 5) {
                         ZStack(alignment: .center) {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.dark4)
+                                .fill(Color.colorDark4)
                             
                             Image("cat-dalinas")
                                 .resizable()
@@ -63,7 +62,7 @@ struct HomeView: View {
                     VStack(spacing: 5) {
                         ZStack(alignment: .center) {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.dark4)
+                                .fill(Color.colorDark4)
                             
                             Image("cat-clowns")
                                 .resizable()
@@ -80,7 +79,7 @@ struct HomeView: View {
                     VStack(spacing: 5) {
                         ZStack(alignment: .center) {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.dark4)
+                                .fill(Color.colorDark4)
                             
                             Image("cat-mariachis")
                                 .resizable()
@@ -97,7 +96,7 @@ struct HomeView: View {
                     VStack(spacing: 5) {
                         ZStack(alignment: .center) {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.dark3)
+                                .fill(Color.colorDark4)
                             
                             Image("cat-djs")
                                 .resizable()
@@ -114,7 +113,7 @@ struct HomeView: View {
                     VStack(spacing: 5) {
                         ZStack(alignment: .center) {
                             RoundedRectangle(cornerRadius: 10)
-                                .fill(Color.dark2)
+                                .fill(Color.colorDark4)
                             
                             Image("cat-decorations")
                                 .resizable()
@@ -128,16 +127,7 @@ struct HomeView: View {
                     }
                 }
             }.padding()
-            
-            //            VStack {
-            //                Image("dal1")
-            //                    .resizable()
-            //                    .scaledToFill()
-            //                    .frame(width: 120, height: 350, alignment: .center)
-            //                    .cornerRadius(20.0)
-            //                    .clipped()
-            //            }
-            
+
             ScrollView {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
                     ForEach(data, id: \.self) { item in
@@ -147,8 +137,6 @@ struct HomeView: View {
                                 Image("dal1")
                                     .resizable()
                                     .scaledToFill()
-                                // .frame(width: 120, height: 350, alignment: .center)
-                                // .frame(height: 350, alignment: .center)
                                     .frame(width: geometry.size.width)
                                     .cornerRadius(20.0)
                                     .clipped()
@@ -169,8 +157,8 @@ struct HomeView: View {
                 )
             }
             .frame(maxHeight: scrollViewContentSize.height)
-            // .frame(maxHeight: 400)
-           
+            
+            Rectangle().frame(height: 0)
         }
     }
 }

@@ -29,17 +29,17 @@ struct LoginView: View {
                     .font(.zenTokyo(.regular, size: 28))
                 Text("FAN")
                     .font(.zenTokyo(.regular, size: 28))
-                    .foregroundColor(Color.primary)
+                    .foregroundColor(Color.colorPrimary)
             }
             
             VStack(spacing: 15) {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Correo")
                         .font(.poppins(.regular, size: 12))
-                        .foregroundColor(Color.dark3)
+                        .foregroundColor(Color.colorDark3)
                     TextField("", text: $username)
                         .font(.poppins(.regular))
-                        .foregroundColor(Color.dark2)
+                        .foregroundColor(Color.colorDark2)
                         .keyboardType(.emailAddress)
                         .focused($loginFieldFocus, equals: .username)
                         .submitLabel(.next)
@@ -52,16 +52,15 @@ struct LoginView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Contraseña")
                         .font(.poppins(.regular, size: 12))
-                        .foregroundColor(Color.dark3)
+                        .foregroundColor(Color.colorDark3)
                     SecureField("", text: $password)
                         .font(.poppins(.regular))
-                        .foregroundColor(Color.dark2)
+                        .foregroundColor(Color.colorDark2)
                         .keyboardType(.emailAddress)
                         .focused($loginFieldFocus, equals: .password)
                         .submitLabel(.done)
                     Divider()
                 }
-                
                 
                 Button {
                     vm.signInWithEmail(email: username, paswd: password)
@@ -74,7 +73,7 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                 }
-                .background(Color.primary)
+                .background(Color.colorPrimary)
                 .cornerRadius(10)
                 .padding(.top, 20)
                 
@@ -84,7 +83,7 @@ struct LoginView: View {
                 } label: {
                     Text("Olvidé la contraseña")
                         .font(.poppins(.regular, size: 14))
-                        .foregroundColor(Color.dark2)
+                        .foregroundColor(Color.colorDark2)
                         .underline()
                 }
             }
@@ -93,7 +92,7 @@ struct LoginView: View {
                 VStack { Divider() }
                 Text("ó")
                     .font(.poppins(.regular, size: 14))
-                    .foregroundColor(Color.dark2)
+                    .foregroundColor(Color.colorDark2)
                 VStack { Divider() }
             }
             
@@ -126,7 +125,7 @@ struct LoginView: View {
                             .frame(height: 16)
                         Text("Ingresa con Google")
                             .font(.poppins(.regular, size: 14))
-                            .foregroundColor(Color.dark2)
+                            .foregroundColor(Color.colorDark2)
                     }
                     .padding(12)
                     .frame(maxWidth: .infinity)
@@ -135,26 +134,8 @@ struct LoginView: View {
                 .background(Color.white)
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
-                        .stroke(Color.dark3, lineWidth: 1)
+                        .stroke(Color.colorDark3, lineWidth: 1)
                 )
-                
-                Button {
-                    
-                } label: {
-                    HStack {
-                        Image("icon-facebook")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(height: 16)
-                        Text("Ingresa con Facebook")
-                            .font(.poppins(.regular, size: 14))
-                            .foregroundColor(Color.white)
-                    }
-                    .padding(12)
-                    .frame(maxWidth: .infinity)
-                }
-                .background(Color.socialFacebook)
-                .cornerRadius(10)
             }
             
             Spacer()

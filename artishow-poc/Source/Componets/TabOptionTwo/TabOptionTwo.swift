@@ -19,13 +19,13 @@ struct TabOptionTwo: View {
                 VStack(alignment: .leading, spacing: -3) {
                     Text("Soy nuevo, quiero")
                         .font(.poppins(.regular, size: 11))
-                        .foregroundColor(Color.dark3)
+                        .foregroundColor(.colorDark3)
                     ZStack(alignment: .bottomLeading) {
                         Text("Registrarme")
                             .font(.poppins(.semiBold, size: 16))
-                            .foregroundColor(Color.dark2)
+                            .foregroundColor(.colorDark2)
                         Rectangle()
-                            .fill(Color.primary)
+                            .fill(Color.colorPrimary)
                             .frame(width: 20, height: 2)
                     }
                 }
@@ -45,11 +45,11 @@ struct TabOptionTwo: View {
             .frame(maxWidth: .infinity)
             .padding(.top, 10)
             .padding(.bottom, 34)
-            .background(Color.primary)
+            .background(Color.colorPrimary)
             .cornerRadius(50, corners: .topLeft)
         }
         .padding(.top, 20)
-        .background(Color.tertiary)
+        .background(Color.colorTertiary)
         .cornerRadius(50, corners: .topLeft)
     }
 }

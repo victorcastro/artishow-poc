@@ -8,14 +8,15 @@
 import SwiftUI
 
 extension Color {
-    static let background = Color("background")
-    static let primary = Color("primary")
-    static let secondary = Color("secondary")
-    static let tertiary = Color("tertiary")
-    static let dark1 = Color("dark1")
-    static let dark2 = Color("dark2")
-    static let dark3 = Color("dark3")
-    static let dark4 = Color("dark4")
+    
+    static let colorBackground = Color("background")
+    static let colorPrimary = Color("primary")
+    static let colorSecondary = Color("secondary")
+    static let colorTertiary = Color("tertiary")
+    static let colorDark1 = Color("dark1")
+    static let colorDark2 = Color("dark2")
+    static let colorDark3 = Color("dark3")
+    static let colorDark4 = Color("dark4")
     
     static let alertDanger = Color("danger")
     static let alertInfo = Color("info")
@@ -27,7 +28,7 @@ extension Color {
     static let socialGoogle = Color("google")
     static let socialApple = Color.black
     
-    static var random: Color {
+    static var cRandom: Color {
         return Color(red: .random(in: 0...1),
                      green: .random(in: 0...1),
                      blue: .random(in: 0...1))

@@ -15,39 +15,32 @@ struct PublicZoneView: View {
     var body: some View {
         VStack() {
             Spacer()
-            Image("splash-clown")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 370)
-                .position(x: 250, y: 350)
-            Spacer()
             VStack(alignment: .leading) {
                 VStack {
                     HStack {
                         Text("Hola!")
                             .font(.poppins(.medium, size: 28))
-                            .foregroundColor(Color.dark2)
+                            .foregroundColor(.colorDark2)
                         HStack(spacing: 0) {
                             Text("ARTI")
                                 .font(.zenTokyo(.regular, size: 28))
-                                .foregroundColor(Color.dark2)
+                                .foregroundColor(.colorDark2)
                             Text("FANATICO")
                                 .font(.zenTokyo(.regular, size: 28))
-                                .foregroundColor(Color.primary)
+                                .foregroundColor(.colorPrimary)
                             
                         }
                     }
                     .padding(.bottom, 8)
                     Text("Bienvenido a la nueva forma de conseguir una mejor experiencia en tu evento")
                         .font(.poppins(.regular, size: 14))
-                        .foregroundColor(Color.dark2)
+                        .foregroundColor(.colorDark2)
                         .padding(.bottom, 20)
                         .fixedSize(horizontal: false, vertical: true)
                 }
                 .padding(.horizontal, 38)
                 
                 TabOptionTwo()
-                
                 
             }
             .frame(maxWidth: .infinity)
@@ -56,8 +49,7 @@ struct PublicZoneView: View {
             .cornerRadius(40, corners: .topLeft)
             .cornerRadius(40, corners: .topRight)
         }
-        // .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.primary)
+        .background(Color.colorPrimary)
         .ignoresSafeArea()
     }
 }

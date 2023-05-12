@@ -12,9 +12,9 @@ extension UINavigationBarAppearance {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithDefaultBackground()
         appearance.backgroundColor = .clear
-        appearance.titleTextAttributes = [.foregroundColor: UIColor(Color.primary)]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(Color.primary), .font: UIFont(name: Font.PoppinsFont.bold.value, size: 26)!]
-        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor(Color.dark1)]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor(Color.colorPrimary)]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor(Color.colorPrimary), .font: UIFont(name: Font.PoppinsFont.bold.value, size: 26)!]
+        appearance.buttonAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor(.colorDark1)]
         return appearance
     }
 }
@@ -24,10 +24,10 @@ extension UITabBarAppearance {
         let appearance = UITabBarAppearance()
         appearance.configureWithDefaultBackground()
         appearance.backgroundColor = .white
-        appearance.stackedLayoutAppearance.normal.iconColor = UIColor(Color.dark3)
-        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor(Color.dark3)]
-        appearance.stackedLayoutAppearance.selected.iconColor = UIColor(Color.primary)
-        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor(Color.primary)]
+        appearance.stackedLayoutAppearance.normal.iconColor = UIColor(.colorDark3)
+        appearance.stackedLayoutAppearance.normal.titleTextAttributes = [.foregroundColor: UIColor(.colorDark3)]
+        appearance.stackedLayoutAppearance.selected.iconColor = UIColor(Color.colorPrimary)
+        appearance.stackedLayoutAppearance.selected.titleTextAttributes = [.foregroundColor: UIColor(.colorPrimary)]
         return appearance
     }
 }

@@ -23,6 +23,7 @@
 		E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42629F0D3650026EEAE /* FirebaseAuth */; };
 		E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42829F0D3650026EEAE /* FirebaseCrashlytics */; };
 		E847D42B29F0D3650026EEAE /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42A29F0D3650026EEAE /* FirebaseMessaging */; };
+		E88FDCF42A0DCCB300CF590C /* BubbleCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88FDCF32A0DCCB300CF590C /* BubbleCircle.swift */; };
 		E89405042A0B22D700DFBB69 /* Appearance + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89405032A0B22D700DFBB69 /* Appearance + Extension.swift */; };
 		E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACB33829F77F19000D11A4 /* HomeView.swift */; };
 		E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACB33B29F78653000D11A4 /* MenuView.swift */; };
@@ -82,6 +83,7 @@
 		E8474D6429F0D08000E2E0B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E8474D6629F0D08200E2E0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8474D7029F0D11200E2E0B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E88FDCF32A0DCCB300CF590C /* BubbleCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleCircle.swift; sourceTree = "<group>"; };
 		E89405032A0B22D700DFBB69 /* Appearance + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appearance + Extension.swift"; sourceTree = "<group>"; };
 		E8ACB33829F77F19000D11A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E8ACB33B29F78653000D11A4 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -268,6 +270,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		E88FDCF22A0DCC8300CF590C /* BubbleCircle */ = {
+			isa = PBXGroup;
+			children = (
+				E88FDCF32A0DCCB300CF590C /* BubbleCircle.swift */,
+			);
+			path = BubbleCircle;
+			sourceTree = "<group>";
+		};
 		E8ACB33729F77F0B000D11A4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +321,7 @@
 		E8BCB02329F0D7C30086A8A0 /* Componets */ = {
 			isa = PBXGroup;
 			children = (
+				E88FDCF22A0DCC8300CF590C /* BubbleCircle */,
 				E841325829FB5DB5008C7430 /* TabOptionTwo */,
 				E8E3F66A29FAE20F0024E804 /* Commons */,
 				E8E0879D29F8D09D008428E7 /* RootViewController */,
@@ -666,6 +677,7 @@
 				E8E0878829F8CD8B008428E7 /* PhotoScreenView.swift in Sources */,
 				E8E087AA29F8D7AD008428E7 /* CoordinatorContent.swift in Sources */,
 				E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */,
+				E88FDCF42A0DCCB300CF590C /* BubbleCircle.swift in Sources */,
 				E841325729FB44E2008C7430 /* View + Extension.swift in Sources */,
 				E8E0877E29F8CB0F008428E7 /* Coordinator.swift in Sources */,
 			);
