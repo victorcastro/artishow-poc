@@ -1,9 +1,9 @@
 # ArtiShow
 
 <p>
-    <img src="https://github.com/victorcastro/artishow-poc/blob/main/.git-content/1_Started.png"/>
-    <img src="https://github.com/victorcastro/artishow-poc/blob/main/.git-content/2_Login.png"/>
-    <img src="https://github.com/victorcastro/artishow-poc/blob/main/.git-content/3_Home.png"/>
+    <img width="220" src="https://github.com/victorcastro/artishow-poc/blob/main/.git-content/1_Started.png"/>
+    <img width="220" src="https://github.com/victorcastro/artishow-poc/blob/main/.git-content/2_Login.png"/>
+    <img width="220" src="https://github.com/victorcastro/artishow-poc/blob/main/.git-content/3_Home.png"/>
 </p>
 
 Demo App for booking children's show artists or general animations in this app, you will find features such as:
