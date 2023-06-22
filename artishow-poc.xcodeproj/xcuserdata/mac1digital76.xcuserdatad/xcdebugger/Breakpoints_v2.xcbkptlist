@@ -64,5 +64,53 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B725825-4D7B-4752-9A81-43F8E4D76A55"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "artishow-poc/Source/Workflows/PrivateZone/TabViews/Home/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "fetchCharacters()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B725825-4D7B-4752-9A81-43F8E4D76A55 - da661a19c99c2023"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for artishow_poc.HomeViewModel.fetchCharacters() async -&gt; ()"
+                  moduleName = "artishow-poc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac1digital76/Workspace/VictorCastroIO/artishow-poc/artishow-poc/Source/Workflows/PrivateZone/TabViews/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "8B725825-4D7B-4752-9A81-43F8E4D76A55 - da661a19c99c2023"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for artishow_poc.HomeViewModel.fetchCharacters() async -&gt; ()"
+                  moduleName = "artishow-poc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac1digital76/Workspace/VictorCastroIO/artishow-poc/artishow-poc/Source/Workflows/PrivateZone/TabViews/Home/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

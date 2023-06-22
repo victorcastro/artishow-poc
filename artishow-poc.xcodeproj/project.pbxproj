@@ -23,6 +23,9 @@
 		E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42629F0D3650026EEAE /* FirebaseAuth */; };
 		E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42829F0D3650026EEAE /* FirebaseCrashlytics */; };
 		E847D42B29F0D3650026EEAE /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = E847D42A29F0D3650026EEAE /* FirebaseMessaging */; };
+		E84ED0542A411ED0001BA238 /* artishow_pocTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84ED0532A411ED0001BA238 /* artishow_pocTests.swift */; };
+		E86C4C912A43D7BF000BD0B9 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86C4C902A43D7BF000BD0B9 /* ApiManager.swift */; };
+		E86C4C932A43D9CD000BD0B9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E86C4C922A43D9CD000BD0B9 /* HomeViewModel.swift */; };
 		E88FDCF42A0DCCB300CF590C /* BubbleCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88FDCF32A0DCCB300CF590C /* BubbleCircle.swift */; };
 		E89405042A0B22D700DFBB69 /* Appearance + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89405032A0B22D700DFBB69 /* Appearance + Extension.swift */; };
 		E8ACB33929F77F19000D11A4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ACB33829F77F19000D11A4 /* HomeView.swift */; };
@@ -69,6 +72,16 @@
 		E8E3F69C29FB20C20024E804 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8E3F68A29FB20C20024E804 /* Poppins-MediumItalic.ttf */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E84ED0552A411ED0001BA238 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8474D5729F0D08000E2E0B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8474D5E29F0D08000E2E0B1;
+			remoteInfo = "artishow-poc";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E83D696B29F9E8CA00DF95A2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		E83D696E29F9E97700DF95A2 /* MenuProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileView.swift; sourceTree = "<group>"; };
@@ -83,6 +96,10 @@
 		E8474D6429F0D08000E2E0B1 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E8474D6629F0D08200E2E0B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8474D7029F0D11200E2E0B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E84ED0512A411ED0001BA238 /* artishow-pocTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "artishow-pocTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84ED0532A411ED0001BA238 /* artishow_pocTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = artishow_pocTests.swift; sourceTree = "<group>"; };
+		E86C4C902A43D7BF000BD0B9 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		E86C4C922A43D9CD000BD0B9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E88FDCF32A0DCCB300CF590C /* BubbleCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleCircle.swift; sourceTree = "<group>"; };
 		E89405032A0B22D700DFBB69 /* Appearance + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Appearance + Extension.swift"; sourceTree = "<group>"; };
 		E8ACB33829F77F19000D11A4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -140,6 +157,13 @@
 				E847D42929F0D3650026EEAE /* FirebaseCrashlytics in Frameworks */,
 				E847D42529F0D3650026EEAE /* FirebaseAnalytics in Frameworks */,
 				E847D42729F0D3650026EEAE /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E84ED04E2A411ED0001BA238 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				E8474D6129F0D08000E2E0B1 /* artishow-poc */,
+				E84ED0522A411ED0001BA238 /* artishow-pocTests */,
 				E8474D6029F0D08000E2E0B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -231,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				E8474D5F29F0D08000E2E0B1 /* artishow-poc.app */,
+				E84ED0512A411ED0001BA238 /* artishow-pocTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +296,14 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		E84ED0522A411ED0001BA238 /* artishow-pocTests */ = {
+			isa = PBXGroup;
+			children = (
+				E84ED0532A411ED0001BA238 /* artishow_pocTests.swift */,
+			);
+			path = "artishow-pocTests";
+			sourceTree = "<group>";
+		};
 		E88FDCF22A0DCC8300CF590C /* BubbleCircle */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				E8ACB33829F77F19000D11A4 /* HomeView.swift */,
+				E86C4C922A43D9CD000BD0B9 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -448,6 +483,7 @@
 				E8E3F66E29FB0F410024E804 /* Extensions */,
 				E8E087A729F8D6D0008428E7 /* Constants.swift */,
 				E8E087A529F8D6C0008428E7 /* Utils.swift */,
+				E86C4C902A43D7BF000BD0B9 /* ApiManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -550,6 +586,24 @@
 			productReference = E8474D5F29F0D08000E2E0B1 /* artishow-poc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E84ED0502A411ED0001BA238 /* artishow-pocTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E84ED0592A411ED0001BA238 /* Build configuration list for PBXNativeTarget "artishow-pocTests" */;
+			buildPhases = (
+				E84ED04D2A411ED0001BA238 /* Sources */,
+				E84ED04E2A411ED0001BA238 /* Frameworks */,
+				E84ED04F2A411ED0001BA238 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E84ED0562A411ED0001BA238 /* PBXTargetDependency */,
+			);
+			name = "artishow-pocTests";
+			productName = "artishow-pocTests";
+			productReference = E84ED0512A411ED0001BA238 /* artishow-pocTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -562,6 +616,10 @@
 				TargetAttributes = {
 					E8474D5E29F0D08000E2E0B1 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					E84ED0502A411ED0001BA238 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E8474D5E29F0D08000E2E0B1;
 					};
 				};
 			};
@@ -584,6 +642,7 @@
 			projectRoot = "";
 			targets = (
 				E8474D5E29F0D08000E2E0B1 /* artishow-poc */,
+				E84ED0502A411ED0001BA238 /* artishow-pocTests */,
 			);
 		};
 /* End PBXProject section */
@@ -620,6 +679,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E84ED04F2A411ED0001BA238 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -653,6 +719,7 @@
 				E8474D6529F0D08000E2E0B1 /* LoginView.swift in Sources */,
 				E8E087A129F8D1F5008428E7 /* CoordinatorView.swift in Sources */,
 				E8E0878E29F8CF33008428E7 /* RegisterView.swift in Sources */,
+				E86C4C932A43D9CD000BD0B9 /* HomeViewModel.swift in Sources */,
 				E8ACB33C29F78653000D11A4 /* MenuView.swift in Sources */,
 				E841325529FB291D008C7430 /* Font + Extension.swift in Sources */,
 				E8E0879729F8D005008428E7 /* ArtishowView.swift in Sources */,
@@ -679,11 +746,28 @@
 				E8BCB02B29F0DF010086A8A0 /* LoginViewModel.swift in Sources */,
 				E88FDCF42A0DCCB300CF590C /* BubbleCircle.swift in Sources */,
 				E841325729FB44E2008C7430 /* View + Extension.swift in Sources */,
+				E86C4C912A43D7BF000BD0B9 /* ApiManager.swift in Sources */,
 				E8E0877E29F8CB0F008428E7 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E84ED04D2A411ED0001BA238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84ED0542A411ED0001BA238 /* artishow_pocTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E84ED0562A411ED0001BA238 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8474D5E29F0D08000E2E0B1 /* artishow-poc */;
+			targetProxy = E84ED0552A411ED0001BA238 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E8474D6B29F0D08200E2E0B1 /* Debug */ = {
@@ -876,6 +960,48 @@
 			};
 			name = Release;
 		};
+		E84ED0572A411ED0001BA238 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G9UQ8D789;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.victorcastro.artishow-pocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/artishow-poc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/artishow-poc";
+			};
+			name = Debug;
+		};
+		E84ED0582A411ED0001BA238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4G9UQ8D789;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.victorcastro.artishow-pocTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/artishow-poc.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/artishow-poc";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -893,6 +1019,15 @@
 			buildConfigurations = (
 				E8474D6E29F0D08200E2E0B1 /* Debug */,
 				E8474D6F29F0D08200E2E0B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E84ED0592A411ED0001BA238 /* Build configuration list for PBXNativeTarget "artishow-pocTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E84ED0572A411ED0001BA238 /* Debug */,
+				E84ED0582A411ED0001BA238 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

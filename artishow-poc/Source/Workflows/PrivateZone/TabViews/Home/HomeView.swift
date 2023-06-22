@@ -17,7 +17,7 @@ struct HomeView: View {
     ]
     
     @State private var scrollViewContentSize: CGSize = .zero
-    
+    @StateObject private var viewModel = HomeViewModel()
     
     var body: some View {
         VStack {
@@ -127,7 +127,7 @@ struct HomeView: View {
                     }
                 }
             }.padding()
-
+            
             ScrollView {
                 LazyVGrid(columns: columns, alignment: .center, spacing: 15) {
                     ForEach(data, id: \.self) { item in
@@ -159,6 +159,11 @@ struct HomeView: View {
             .frame(maxHeight: scrollViewContentSize.height)
             
             Rectangle().frame(height: 0)
+        }
+        .onAppear {
+            Task {
+                await viewModel.fetchCharacters()
+            }
         }
     }
 }
