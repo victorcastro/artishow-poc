@@ -18,6 +18,7 @@ struct HomeView: View {
     
     @State private var scrollViewContentSize: CGSize = .zero
     @StateObject private var viewModel = HomeViewModel()
+    @State private var errorViewHandler: ErrorViewHandlerModel?
     
     var body: some View {
         VStack {
@@ -162,7 +163,11 @@ struct HomeView: View {
         }
         .onAppear {
             Task {
-                await viewModel.fetchCharacters()
+                do {
+                    try await viewModel.fetchCharacters()
+                } catch {
+                    print(error)
+                }
             }
         }
     }

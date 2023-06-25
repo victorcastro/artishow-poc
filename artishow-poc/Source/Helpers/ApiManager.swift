@@ -7,32 +7,28 @@
 
 import Foundation
 
-enum APIError: Error {
-    case invalidURL
-    case requestFailed
-    case invalidResponse
-    case jsonParsingFailed
-}
-
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"
 }
 
-
 struct ApiResponse<T: Codable> {
     let result: T
 }
 
+enum EnviromentDomain: String {
+    case develop = "https://rickandmortyapi.com/api"
+}
+
 enum Endpoints: String {
-    case characaters = "https://rickandmortyapi.com/api/character"
+    case characaters = "/character"
 }
 
 class ApiManager {
     func request<T: Codable>(endpoint: Endpoints, method: HTTPMethod) async throws -> ApiResponse<T> {
-        guard let url = URL(string: endpoint.rawValue) else {
-            throw APIError.invalidURL
+        guard let url = URL(string: EnviromentDomain.develop.rawValue + endpoint.rawValue) else {
+            throw APIErrors.invalidURL
         }
         
         var request = URLRequest(url: url)
@@ -42,7 +38,7 @@ class ApiManager {
         
         guard let httpResponse = response as? HTTPURLResponse,
               (200...299).contains(httpResponse.statusCode) else {
-            throw APIError.invalidResponse
+            throw APIErrors.invalidResponse
         }
         
         do {
@@ -51,7 +47,7 @@ class ApiManager {
             let apiResponse = ApiResponse(result: result)
             return apiResponse
         } catch {
-            throw APIError.jsonParsingFailed
+            throw APIErrors.jsonParsingFailed
         }
     }
 }
